@@ -82,7 +82,12 @@ Code based on JavaScript for C# Developers with Shawn Wildermuth (pluralsight.co
 
 	var comp1 = cust."company name";	// NOPE
 	var comp2 = cust.["company name"];
+	
+	Note: Use instanceof to check if a variable is an instance of a particular "class"
+		var auth = new Author(...);
+		// auth instanceof Author => true
 
+		
 # Practical Application #
 
 # C\# #
@@ -116,6 +121,9 @@ Code based on JavaScript for C# Developers with Shawn Wildermuth (pluralsight.co
 
 # Related articles #
 [JSON: serialize and deserialize functions in JavaScript](http://www.kristofdegrave.be/2012/07/json-serialize-and-deserialize.html)
+
+# Other articles #
+[Quick Tip: Quick and Easy JavaScript Testing with “Assert”](http://net.tutsplus.com/tutorials/javascript-ajax/quick-tip-quick-and-easy-javascript-testing-with-assert/)
 
 # About the Author #
 

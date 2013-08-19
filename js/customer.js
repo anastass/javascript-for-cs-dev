@@ -52,3 +52,7 @@ function Author(first_name, last_name) {
 }
 
 Author.country = 'England';    //define static property
+
+// function location() is shared by all instancies; the function does not have an access to the private data
+Author.prototype.location = function() {return this.first_name + ' lives in ' + Author.country}; 
+

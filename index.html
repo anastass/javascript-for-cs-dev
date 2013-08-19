@@ -44,6 +44,12 @@
 
                 // access static property
                 console.log(auth.last_name + ' lives in ' + Author.country);    // Note how the static property is accessed
+
+                console.log(auth.location());
+
+                // assert
+                console.assert(auth instanceof Author);
+                // console.assert(auth instanceof Customer);
             console.groupEnd();
         </script>
     </body>
