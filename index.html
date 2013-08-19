@@ -5,9 +5,28 @@
         <title>JavaScript for C# Developers</title>
         <link rel="stylesheet" href="css/style.css">
         <script type="text/javascript" src="js/support.js"></script>
+        <script type="text/javascript" src="js/support_ns.js"></script>
     </head>
     <body>
         <h1>JavaScript for C# Developers</h1>
-        <script>DoIt();</script>
+        <script>
+        	DoIt();
+        	supportNs.DoIt();	// cal DoIt from supportNs namespace
+
+        	console.group("%cFunction object", "font-size: large; color: blue");
+	        	console.log("foo.length => " + foo.length);
+	        	console.log("foo.name => " + foo.name);
+	        	console.log("foo.toString() => " + foo.toString());
+	        console.groupEnd();
+
+        	console.group("%c'this' Object", "font-size: large; color: blue");
+        		var obj = {name: "myObj", myFunc: function(){return this.name}};
+	        	console.log('var obj = ' + JSON.stringify(obj, function (key, value) {
+   					if (typeof value === 'function') {return value.toString();}
+   					return value;
+   				}));
+	        	console.log("obj.myFunc() => " + obj.myFunc());
+	        console.groupEnd();
+        </script>
     </body>
 </html>

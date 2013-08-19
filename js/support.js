@@ -12,3 +12,6 @@ function DoIt() {
 	console.log("Hello " + person.name + " you have a place for '" + courses[1] + "' course.");
 }
 
+function foo(one, two, three) {
+	console.log('You have passed ' + arguments.length + ' arguments');
+}

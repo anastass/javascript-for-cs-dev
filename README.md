@@ -59,3 +59,20 @@ JavaScript for C# Developers
 	// ... and slice, splice, concat
 	var fruits = ["Banana", "Orange", "Apple", "Mango"];
 	fruits.splice(2,0,"Lemon","Kiwi");	// Banana,Orange,Lemon,Kiwi,Apple,Mango
+
+	Note: 
+		All functions in JavaScript return a value (default "undefined")
+		"this" applies to the owner of the function
+
+	// this
+	var foo = function() {...};	// in case of a global scope...
+	foo(); 						// this points to the [Object Window]
+
+	bind() lets you to change the owner 
+	       (change the context in whtch function is executed)
+
+	Note: Only functions in JavaScript create a scope; block does not!
+
+
+# Related articles #
+[JSON: serialize and deserialize functions in JavaScript](http://www.kristofdegrave.be/2012/07/json-serialize-and-deserialize.html)
