@@ -34,6 +34,14 @@
         		info = cust.getInfo();
         		console.log(info);
 	        console.groupEnd();
+
+            console.group("%cAuthor", "font-size: large; color: blue");
+                var auth = new Author("Rachel", "Joyce");
+                console.log("Auhor: " + auth.getFullName());
+
+                auth.last_name = "Falk";
+                console.log("New name: " + auth.last_name);
+            console.groupEnd();
         </script>
     </body>
 </html>

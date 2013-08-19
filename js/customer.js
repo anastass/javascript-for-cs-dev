@@ -29,3 +29,24 @@ function Customer(name, company) {
 		return String.format(fmt, this.name, this.company.toUpperCase()); 
 	}
 }
+
+
+function Author(first_name, last_name) {
+    var _first_name = first_name;
+    var _last_name = last_name;
+
+    Object.defineProperty(this, 
+        "first_name", 
+        {get: function() {return _first_name;}}
+    );
+    
+    Object.defineProperty(this, 
+        "last_name", 
+        {
+            get: function() {return _last_name;}, 
+            set: function(value) {_last_name = value;}
+        }
+    );
+
+    this.getFullName = function() {return _last_name.toUpperCase() + ", " + _first_name};
+}
