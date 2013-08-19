@@ -77,3 +77,7 @@ Code based on JavaScript for C# Developers with Shawn Wildermuth (pluralsight.co
 
 # Related articles #
 [JSON: serialize and deserialize functions in JavaScript](http://www.kristofdegrave.be/2012/07/json-serialize-and-deserialize.html)
+
+# About the Author #
+
+[Shawn Wildermuth](http://wildermuth.com/) is a seven-time book author, a nine-time Microsoft MVP, member of a number of Microsoft "Insider" groups as well as an internationally recognized speaker on a variety of technologies.
