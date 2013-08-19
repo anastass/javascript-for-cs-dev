@@ -1,6 +1,7 @@
 JavaScript for C# Developers
 ============================
 
+Code based on JavaScript for C# Developers with Shawn Wildermuth (pluralsight.com)
 
 # Tools #
 
