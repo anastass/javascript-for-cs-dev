@@ -50,3 +50,5 @@ function Author(first_name, last_name) {
 
     this.getFullName = function() {return _last_name.toUpperCase() + ", " + _first_name};
 }
+
+Author.country = 'England';    //define static property
