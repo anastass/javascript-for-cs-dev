@@ -7,7 +7,7 @@ Code based on JavaScript for C# Developers with Shawn Wildermuth (pluralsight.co
 
 	jslint	;use 'npm install -g jslint' to install it
 
-# Miscellaneous #
+# JavaScript Basics #
 	// JavaScript types
 	value      - boolean, string, number
 	reference  - object
@@ -61,6 +61,7 @@ Code based on JavaScript for C# Developers with Shawn Wildermuth (pluralsight.co
 	var fruits = ["Banana", "Orange", "Apple", "Mango"];
 	fruits.splice(2,0,"Lemon","Kiwi");	// Banana,Orange,Lemon,Kiwi,Apple,Mango
 
+# JavaScript Functions #
 	Note: 
 		All functions in JavaScript return a value (default "undefined")
 		"this" applies to the owner of the function
@@ -74,6 +75,44 @@ Code based on JavaScript for C# Developers with Shawn Wildermuth (pluralsight.co
 
 	Note: Only functions in JavaScript create a scope; block does not!
 
+# Object-Oriented JavaScript #
+	// dot syntax vs. bracket syntax
+	var n1 = cust.name;
+	var n2 = cust["name"];
+
+	var comp1 = cust."company name";	// NOPE
+	var comp2 = cust.["company name"];
+
+# Practical Application #
+
+# C\# #
+	// object initializer
+	var cust = new Customer()
+	{
+		Name = "Shawn",
+		CompanyName" = "Wilder Minds",
+		Address = new Address()
+		{
+			StreetAddress = "123 Main Street",
+			...
+		}
+		...
+	}
+
+	// anonymous types
+	var cust = new {
+		Name = "Shawn",
+		CompanyName" = "Wilder Minds",
+		Address = new {
+			StreetAddress = "123 Main Street",
+			...
+		}
+		...
+	}
+
+	// .Net, dynamic + ExpandoObject
+	dynamic foo = new ExpandoObject()
+	foo.Name = "Shawn";	// add member on the fly
 
 # Related articles #
 [JSON: serialize and deserialize functions in JavaScript](http://www.kristofdegrave.be/2012/07/json-serialize-and-deserialize.html)

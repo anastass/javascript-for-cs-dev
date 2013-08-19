@@ -6,6 +6,7 @@
         <link rel="stylesheet" href="css/style.css">
         <script type="text/javascript" src="js/support.js"></script>
         <script type="text/javascript" src="js/support_ns.js"></script>
+        <script type="text/javascript" src="js/customer.js"></script>
     </head>
     <body>
         <h1>JavaScript for C# Developers</h1>
@@ -26,6 +27,12 @@
    					return value;
    				}));
 	        	console.log("obj.myFunc() => " + obj.myFunc());
+	        console.groupEnd();
+
+        	console.group("%cCustomer", "font-size: large; color: blue");
+        		var cust = new Customer("Shawn", "Wilder Minds");
+        		info = cust.getInfo();
+        		console.log(info);
 	        console.groupEnd();
         </script>
     </body>
