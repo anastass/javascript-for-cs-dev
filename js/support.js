@@ -15,3 +15,16 @@ function DoIt() {
 function foo(one, two, three) {
 	console.log('You have passed ' + arguments.length + ' arguments');
 }
+
+// show properties and values
+function showProp(o) {
+	for (var prop in o) {
+		var msg = prop + " = " + o[prop]; // "property name" = "value"
+		console.log(msg);
+	}
+}
+
+// check if object has a property
+function hasProp(o, prop) {
+	return o.hasOwnProperty(prop);
+}

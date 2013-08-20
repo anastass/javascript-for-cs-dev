@@ -51,6 +51,32 @@
                 console.assert(auth instanceof Author);
                 // console.assert(auth instanceof Customer);
             console.groupEnd();
+
+        	console.group("%cReflection", "font-size: large; color: blue");
+        		showProp(person);
+
+        		var prop = "age";
+				if (hasProp(person, prop)) {
+	        		console.log("Object has property named '" + prop + "'");
+
+	        		// example of propertyIsEnumearable() function
+	        		prop = "children";
+	        		var msg = (person.propertyIsEnumerable(prop)) ? "" : "NOT ";
+	        		console.log("Property '" + prop + "' is " + msg + "enumerable");
+				} else {
+	        		console.log("Object does NOT have property named '" + prop + "'");
+				}
+	        console.groupEnd();
+
+        	console.group("%cExtension Methods", "font-size: large; color: blue");
+				Array.prototype.calculateCount = function() {
+					return this.length;
+				}
+
+				var a = ["one", "two"];
+				console.log("Array: " + a);
+				console.log("Length: " + a.calculateCount());
+	        console.groupEnd();
         </script>
     </body>
 </html>

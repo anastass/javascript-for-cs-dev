@@ -87,7 +87,34 @@ Code based on JavaScript for C# Developers with Shawn Wildermuth (pluralsight.co
 		var auth = new Author(...);
 		// auth instanceof Author => true
 
+	// object vs class
+		var Owner = {
+			name: "Shawn",
+			email: "shawn@foo.com",
+			phone: "404-555-1212"
+		}
+
+		function Customer(name, email) {
+			this.name = name;
+			this.email = email;
+			this.balance = 0;
+		}
+
+	// An alternative to Interfaces in JavaScript is Duck Typing
+		function sendEmail(r) {
+			var to = r.email;
+			var name = r.name;
+		}
 		
+		sendEmail(Owner);
+
+		var c = new Customer("Bob", "bob@foo.com");
+		sendEmail(c);
+
+	// Detecting properties
+	var c = new Customer();
+	var has = c.hasOwnProperty("name");
+
 # Practical Application #
 
 # C\# #
@@ -124,6 +151,7 @@ Code based on JavaScript for C# Developers with Shawn Wildermuth (pluralsight.co
 
 # Other articles #
 [Quick Tip: Quick and Easy JavaScript Testing with “Assert”](http://net.tutsplus.com/tutorials/javascript-ajax/quick-tip-quick-and-easy-javascript-testing-with-assert/)
+[propertyIsEnumerable](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/propertyIsEnumerable)
 
 # About the Author #
 
