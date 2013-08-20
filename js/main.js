@@ -2,7 +2,7 @@ requirejs.config({
 	baseUrl: 'js'
 });
 
-requirejs(['support', 'support_ns', 'customer'],
+requirejs(['support', 'support_ns', 'customer', 'svr'],
 function() {
 	console.log("%cmain.js", "font-size: large; color: red");
 
@@ -71,5 +71,20 @@ function() {
 		var a = ["one", "two"];
 		console.log("Array: " + a);
 		console.log("Length: " + a.calculateCount());
+	console.groupEnd();
+
+	console.group("%cEvents", "font-size: large; color: blue");
+		var svr = new Svr();
+		svr.send({
+				"from": "shawn@foo.com",
+				"body": "Hello",
+				"subject": "Test Msg",
+				complete: function(r) {
+					console.log("Success: " + r);
+				},
+				error: function(e) {
+					console.log("Failed: " + e);
+				}
+			});	
 	console.groupEnd();
 });
