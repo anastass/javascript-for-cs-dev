@@ -1,0 +1,7 @@
+{
+	"name": "JavaScript for C# Developers",
+	"verson": "1.0.0",
+	"dependencies": {
+		"requirejs": "2.1.8"	
+	}
+}
