@@ -2,3 +2,8 @@ body {
   text-align: center;
   background: #99ccff;
 }
+p#tip {
+  color: grey;
+  font-size: .9em;
+  font-style: italic;
+}

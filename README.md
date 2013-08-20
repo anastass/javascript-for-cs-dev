@@ -319,15 +319,17 @@ Code based on JavaScript for C# Developers with Shawn Wildermuth (pluralsight.co
 
 # Related articles #
 - [JSON: serialize and deserialize functions in JavaScript](http://www.kristofdegrave.be/2012/07/json-serialize-and-deserialize.html)
-
-# Other articles #
+- [A Plain English Guide to JavaScript Prototypes](http://sporto.github.io/blog/2013/02/22/a-plain-english-guide-to-javascript-prototypes/)
 - [Quick Tip: Quick and Easy JavaScript Testing with “Assert”](http://net.tutsplus.com/tutorials/javascript-ajax/quick-tip-quick-and-easy-javascript-testing-with-assert/)
+- [JavaScript Strict Mode](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions_and_function_scope/Strict_mode)
 - [propertyIsEnumerable](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/propertyIsEnumerable)
-- [A RequireJS, Backbone, and Bower Starter Template](http://net.tutsplus.com/tutorials/javascript-ajax/a-requirejs-backbone-and-bower-starter-template/)
-- [REQUIREJS API](http://requirejs.org/docs/api.html#jsfiles)
 - [JavaScript Associative Arrays Demystified](http://blog.xkoder.com/2008/07/10/javascript-associative-arrays-demystified/)
 - [Objects as associative arrays](http://www.quirksmode.org/js/associative.html)
-- [A Plain English Guide to JavaScript Prototypes](http://sporto.github.io/blog/2013/02/22/a-plain-english-guide-to-javascript-prototypes/)
+- [string.format for Javascript](http://joquery.com/2012/string-format-for-javascript)
+- [Using the Console](https://developers.google.com/chrome-developer-tools/docs/console)
+- [A RequireJS, Backbone, and Bower Starter Template](http://net.tutsplus.com/tutorials/javascript-ajax/a-requirejs-backbone-and-bower-starter-template/)
+- [REQUIREJS API](http://requirejs.org/docs/api.html#jsfiles)
+- [HTML Color Picker](http://www.w3schools.com/tags/ref_colorpicker.asp)
 
 # About the Author #
 
