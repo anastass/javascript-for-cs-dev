@@ -6,6 +6,12 @@ Code based on JavaScript for C# Developers with Shawn Wildermuth (pluralsight.co
 # Tools #
 
 	jslint	;use 'npm install -g jslint' to install it
+	bower
+
+# Files #
+	bower.json 	- define dependencies
+	.bowerrc 	- specify bower instalaltion directory
+	.gitignore 	- ignore vendor directory; use 'bower install' to initialize it 
 
 # JavaScript Basics #
 	// JavaScript types
@@ -153,6 +159,7 @@ Code based on JavaScript for C# Developers with Shawn Wildermuth (pluralsight.co
 [Quick Tip: Quick and Easy JavaScript Testing with “Assert”](http://net.tutsplus.com/tutorials/javascript-ajax/quick-tip-quick-and-easy-javascript-testing-with-assert/)
 [propertyIsEnumerable](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/propertyIsEnumerable)
 [A RequireJS, Backbone, and Bower Starter Template](http://net.tutsplus.com/tutorials/javascript-ajax/a-requirejs-backbone-and-bower-starter-template/)
+[REQUIREJS API](http://requirejs.org/docs/api.html#jsfiles)
 
 # About the Author #
 
